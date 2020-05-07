@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Unit tests for Bulletin Board</title>
+
+	<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.bulletinboard": "../../"
+			}'
+			data-sap-ui-frameOptions='deny'
+			data-sap-ui-async="true">
+	</script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.0.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.10.0.js"></script>
+	
+
+	
+	
+<!-- Date: 2020/May/05
+	if you downloaded code from SAP or used file->new->Project from Templet, you will probably have problem by using all these scripts.
+	As all these scripts and stylesheet need to be readed from "https://sapui5.hana.ondemand.com/"
+	So, there are following options you can take to start test by using QUnit.
+	
+	1. fill all the address in to a ABSOLUTE ADDRESS:
+	<link rel="stylesheet" type="text/css" href="https://sapui5.hana.ondemand.com/resources/sap/ui/thirdparty/qunit-2.css">
+	<script src="https://sapui5.hana.ondemand.com/resources/sap/ui/thirdparty/qunit-2.js"></script>
+	<script src="https://sapui5.hana.ondemand.com/resources/sap/ui/qunit/qunit-junit.js"></script>
+	<script src="https://sapui5.hana.ondemand.com/resources/sap/ui/qunit/qunit-coverage.js"></script>
+	<script src="https://sapui5.hana.ondemand.com/resources/sap/ui/thirdparty/sinon.js"></script>
+	<script src="https://sapui5.hana.ondemand.com/resources/sap/ui/thirdparty/sinon-qunit.js"></script>
+	
+	2. if last step does not work, it could probably because "https://sapui5.hana.ondemand.com/" do not store them any more.
+	In this case you can use
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+	
+	In the above mentioned two cases, it should be ensure that <body> contains two parts, namely:
+	<body>
+		<div id="qunit"/>
+		<div id="qunit-fixture"/>
+	</body>
+	
+	3. To make sure that all the NEWEST functions are supported by QUnit, it could be better to use:
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.0.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.10.0.js"></script>
+	
+	In this case <body> should only contain one part, namily:
+	<body>
+		<div id="qunit"/>
+	</body>
+-->
+
+	<script src="unitTests.qunit.js"></script>
+
+</head>
+<body>
+	<div id="qunit"/>
+	<!--
+		only usable for the qunit 2.3.2, by qunit 2.10.0 delete this <div>
+		<div id="qunit-fixture"/>
+	-->
+	
+</body>
+</html>
+
+
